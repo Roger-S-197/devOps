@@ -1,0 +1,126 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center{
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    background-color: white;
+}
+
+header {
+    background-color: white;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.menu{
+    width: 75%;
+    text-align: right;
+    display: inline;
+}
+
+.menu a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 50px;
+    transition: 0.7s;
+    display: inline-block;
+    padding: 35px 20px;
+}
+
+.menu a:hover{
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(24, 69, 0);
+}
+
+.foto {
+    padding: 2px 135px;
+    background-color: white;
+}
+
+.quadro {
+    background-color: rgba(255, 255, 255, 0.911);
+    margin-top: 20px;
+    max-width: 60%;
+}
+
+.quadro h2 {
+    text-align: center;
+    color: green;
+}
+
+.quadro p {
+    text-align: center;
+}
+
+.servicos{
+    margin-top: 20px;
+}
+
+.servicos h1{
+    text-align: center;
+    color: rgb(196, 0, 0);
+    font-style: none;
+    font-size: 26px;
+}
+
+.servicos p{
+    text-align: center;
+    padding: 20px 0px;
+    max-width: 80%;
+}
+
+.ifood {
+    padding: 0px 580px;
+}
+
+.horarios{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.horarios h2 {
+    color: green;
+}
+
+.horarios h3{
+    color: green;
+}
+
+.contato{
+    padding: 30px 350px;
+    background-color: gray;
+    border-top: 1px solid black;
+}
+
+.contato h2{
+    font-size: 22px;
+    color: rgb(12, 12, 12);
+}
+
+.contato a{
+    color: black;
+    transition: 0.7s;
+    font-size: 22px;
+}
+
+.contato a:hover{
+    color: red;
+}
+
+.imagens{
+    width: 100%;
+    padding-left: 350px;
+}
+
+.frase{
+    margin-left: 350px;
+}
