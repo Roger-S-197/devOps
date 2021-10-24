@@ -10,17 +10,18 @@
     margin: 0 auto;
     padding: 0 2%;
     display: flex;
-    background-color: white;
+    background-color: rgb(197, 197, 197);
 }
 
 header {
-    background-color: white;
+    background-color: rgb(197, 197, 197);
     padding: 20px 0px;
-    border-bottom: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(100, 100, 100);
 }
 
 .menu{
-    width: 75%;
+    width: 100%;
+    max-width: 980px;
     text-align: right;
     display: inline;
 }
@@ -97,30 +98,38 @@ header {
 
 .contato{
     padding: 30px 350px;
-    background-color: gray;
-    border-top: 1px solid black;
+    background-color: rgb(197, 197, 197);
+    border-top: 1px solid rgb(100, 100, 100);
+    border-bottom: 1px solid rgb(100, 100, 100);
+    text-decoration: none;
 }
 
 .contato h2{
-    font-size: 22px;
+    font-size: 26px;
     color: rgb(12, 12, 12);
+    text-decoration: solid;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .contato a{
     color: black;
     transition: 0.7s;
     font-size: 22px;
+    text-decoration: none;
 }
 
 .contato a:hover{
-    color: red;
+    color: #070;
+    font-size: 24px;
 }
 
 .imagens{
     width: 100%;
-    padding-left: 350px;
 }
 
 .frase{
-    margin-left: 350px;
+    text-align: center;
+    color: green;
+    font-size: 22px;
+
 }
