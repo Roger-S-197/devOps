@@ -7,16 +7,18 @@
 
 .center{
     max-width: 980px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 2%;
     display: flex;
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(247, 247, 247);
 }
 
 header {
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(247, 247, 247);
     padding: 20px 0px;
-    border-bottom: 1px solid rgb(100, 100, 100);
+    border-bottom: 1px solid #507D7D;
+    width: 100%;
 }
 
 .menu{
@@ -37,8 +39,10 @@ header {
 }
 
 .menu a:hover{
-    color: rgba(255, 255, 255, 0.5);
-    background-color: rgb(24, 69, 0);
+    color: #BDC9C9;
+    background-color: #507D7D;
+    font-size: 16px;
+    /*rgb(24, 69, 0)*/
 }
 
 .foto {
@@ -61,8 +65,22 @@ header {
     text-align: center;
 }
 
-.servicos{
+.horarios{
+    text-align: center;
+    font-size: 22px;
     margin-top: 20px;
+}
+
+.horarios h2 {
+    color: green;
+}
+
+.horarios h3{
+    color: green;
+}
+
+.servicos{
+    justify-content: center;
 }
 
 .servicos h1{
@@ -78,29 +96,31 @@ header {
     max-width: 80%;
 }
 
-.ifood {
-    padding: 0px 580px;
+.imagens{
+    justify-content: center;
 }
 
-.horarios{
+.frase{
     text-align: center;
+    color: green;
     font-size: 22px;
-    margin-top: 20px;
+
 }
 
-.horarios h2 {
-    color: green;
+.ifood{
+    justify-content: right;
+    text-align: center;
+    color: red;
+    text-shadow: rgb(196, 0, 0);
 }
-
-.horarios h3{
-    color: green;
+footer{
+    display: flexbox;
 }
 
 .contato{
-    padding: 30px 350px;
-    background-color: rgb(197, 197, 197);
-    border-top: 1px solid rgb(100, 100, 100);
-    border-bottom: 1px solid rgb(100, 100, 100);
+    justify-content: left;
+    background-color: rgb(247, 247, 247);
+    border-top: 1px solid #507D7D;
     text-decoration: none;
 }
 
@@ -121,15 +141,4 @@ header {
 .contato a:hover{
     color: #070;
     font-size: 24px;
-}
-
-.imagens{
-    width: 100%;
-}
-
-.frase{
-    text-align: center;
-    color: green;
-    font-size: 22px;
-
 }
