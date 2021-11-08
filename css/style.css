@@ -11,13 +11,13 @@
     margin: 0 auto;
     padding: 0 2%;
     display: flex;
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(30, 30, 30);
 }
 
 header {
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(30, 30, 30);
     padding: 20px 0px;
-    border-bottom: 1px solid #507D7D;
+    border-bottom: 1px solid #070;
     width: 100%;
 }
 
@@ -29,7 +29,7 @@ header {
 }
 
 .menu a{
-    color: black;
+    color: #fff;
     font-size: 14px;
     text-decoration: none;
     margin-right: 50px;
@@ -39,8 +39,8 @@ header {
 }
 
 .menu a:hover{
-    color: #BDC9C9;
-    background-color: #507D7D;
+    color: azure;
+    background-color: #070;
     font-size: 16px;
     /*rgb(24, 69, 0)*/
 }
@@ -80,7 +80,9 @@ header {
 }
 
 .servicos{
-    justify-content: center;
+    display: grid;
+    max-width: 80%;
+    text-align: center;
 }
 
 .servicos h1{
@@ -88,6 +90,14 @@ header {
     color: rgb(196, 0, 0);
     font-style: none;
     font-size: 26px;
+}
+
+.servicos h3{
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    color: #070;
+    max-width: 80%;
 }
 
 .servicos p{
@@ -110,35 +120,54 @@ header {
 .ifood{
     justify-content: right;
     text-align: center;
-    color: red;
-    text-shadow: rgb(196, 0, 0);
+    color: #fff;
+    text-decoration: none;
+
 }
 footer{
     display: flexbox;
+    padding: 30px;
 }
 
 .contato{
     justify-content: left;
-    background-color: rgb(247, 247, 247);
-    border-top: 1px solid #507D7D;
     text-decoration: none;
 }
 
 .contato h2{
-    font-size: 26px;
-    color: rgb(12, 12, 12);
-    text-decoration: solid;
-    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    margin-left: 20px;
 }
 
 .contato a{
-    color: black;
+    color: #fff;
     transition: 0.7s;
-    font-size: 22px;
+    font-size: 20px;
     text-decoration: none;
 }
 
 .contato a:hover{
-    color: #070;
-    font-size: 24px;
+    color: rgba(255, 0, 0, 0.493);
+    font-size: 22px;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    border-top: 1px solid #070;
+}
+
+.comunidade{
+    text-align: center;
+    width: 80%;
+}
+
+.comunidade h1{
+    color: #007;
+}
+
+.form{
+    text-align: center;
+    color: #007;
 }
