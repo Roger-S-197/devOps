@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ab50b8b37f.js" crossorigin="anonymous"></script>
     <title>Studio Biforce Fitness</title>
 </head>
 <body>
@@ -41,6 +43,102 @@
         <img src="img/1 (1).jpg" alt="" width="980px">
         </div>
     </section>
+    <section class="leader">
+        <div class="slide">
+            <div class="slides">
+                <div id="back" class="btn">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div id="next" class="btn">
+                    <i class="fas-chevron-right"></i>
+                </div>
+                <div id="atual" class="images">
+                    <img src="img/0.jpg" alt="studio" width="980px">
+                </div>
+                <div id="atual" class="images">
+                    <img src="img/1.jpg" alt="studio">
+                </div>
+                <div id="atual" class="images">
+                    <img src="img/2.jpg" alt="studio">
+                </div>
+                <div id="atual" class="images">
+                    <img src="img/3.jpg" alt="studio">
+                </div>
+                <div id="atual" class="images">
+                    <img src="img/4.jpg" alt="studio">
+                </div>
+                <div id="atual" class="images">
+                    <img src="img/5.jpg" alt="studio">
+                </div>
+                <div id="atual" class="images">
+                    <img src="img/6.jpg" alt="studio">
+                </div>
+                <div id="atual" class="images">
+                    <img src="img/7.jpg" alt="studio">
+                </div>
+                <div id="atual" class="images">
+                    <img src="img/8.jpg" alt="studio">
+                </div>
+            </div>
+            <div class="balls">
+                <div id="0"></div>
+                <div id="1"></div>
+                <div id="2"></div>
+                <div id="3"></div>
+                <div id="4"></div>
+                <div id="5"></div>
+                <div id="6"></div>
+                <div id="7"></div>
+                <div id="8"></div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var balls = document.querySelector('.balls')
+        var quant = document.querySelectorAll('.slides .images')
+        var atual = 0
+        var imagem = document.getElementById('atual')
+        var next = document.getElementById('next')
+        var back = document.getElementById('back')
+
+        for(let i=0; i < quant.length; i++){
+            var div = document.create.element('div')
+            div.id = i
+            balls.appendChild(div)
+        }
+        document.getElementById('0').classList.add('imgAtual')
+
+        var pos = document.querySelectorAll('.balls div')
+
+        for(let i=0; i< pos.length; i++){
+            pos[i].addEventListener('click', ()=>{
+                atual = pos[i].id
+                slide()
+            })
+        }
+
+        back.addEventListener('click', ()=>{
+            atual--
+            slide()
+        })
+        next.addEventListener('click', ()=>{
+            atual++
+            slide()
+        })
+
+        function slide(){
+            if(atual >= quant.length){
+                atual = 0
+            }
+            else if(atual < 0){
+                atual = quant.length-1
+            }
+            document.querySelector('.imgAtual').classList.remove('.imgAtual')
+            imagem.style.marginLeft = -980*atual+'px'
+            document.getElementById(atual).classList.add('imgAtual')
+        }
+        slide(0)
+    </script>
 
     <footer>
         <div class="contato">
