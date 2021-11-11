@@ -178,19 +178,22 @@ footer{
 .form{
     text-align: center;
     color: #007;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 #slider {
     position: relative;
     width: 50%;
     height: 32vw;
-    margin: 150px auto;
+    margin-top: 20px;
+    margin-bottom: 120px;
     font-family: 'Helvetica Neue', sans-serif;
     perspective: 1400px;
     transform-style: preserve-3d;
-  }
+}
   
-  input[type=radio] {
+input[type=radio] {
     position: relative;
     top: 108%;
     left: 50%;
@@ -200,22 +203,22 @@ footer{
     opacity: 0.4;
     transform: translateX(-83px);
     cursor: pointer;
-  }
+}
   
   
-  input[type=radio]:nth-child(5) {
+input[type=radio]:nth-child(5) {
     margin-right: 0px;
-  }
+}
   
-  input[type=radio]:checked {
+input[type=radio]:checked {
     opacity: 1;
-  }
+}
   
   
   
   
-  #slider label,
-  #slider label img {
+#slider label,
+#slider label img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -230,13 +233,9 @@ footer{
     align-items: center;
     justify-content: center;
     transition: transform 400ms ease;
-  }
+}
   
-  
-  
-  /* Slider Functionality */
-  
-  /* Active Slide */
+  /* tela */
   #s1:checked ~ #slide1,
    #s2:checked ~ #slide2,
     #s3:checked ~ #slide3,
@@ -244,9 +243,9 @@ footer{
       #s5:checked ~ #slide5 {
     box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
     transform: translate3d(0%, 0, 0px);
-  }
+}
   
-  /* Next Slide */
+  /* proximo */
   #s1:checked ~ #slide2,
    #s2:checked ~ #slide3,
     #s3:checked ~ #slide4,
@@ -254,10 +253,10 @@ footer{
       #s5:checked ~ #slide1 {
     box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
     transform: translate3d(20%, 0, -100px);
-  }
+}
   
   
-  /* Next to Next Slide */
+  /* proximo 2 */
   #s1:checked ~ #slide3,
    #s2:checked ~ #slide4,
     #s3:checked ~ #slide5,
@@ -265,9 +264,9 @@ footer{
       #s5:checked ~ #slide2 {
     box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
     transform: translate3d(40%, 0, -250px);
-  }
+}
   
-  /* Previous to Previous Slide */
+  /* anterior */
   #s1:checked ~ #slide4,
    #s2:checked ~ #slide5,
     #s3:checked ~ #slide1,
@@ -275,9 +274,9 @@ footer{
       #s5:checked ~ #slide3 {
     box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
     transform: translate3d(-40%, 0, -250px);
-  }
+}
   
-  /* Previous Slide */
+  /* anterior 2 */
   #s1:checked ~ #slide5,
    #s2:checked ~ #slide1,
     #s3:checked ~ #slide2,
@@ -285,4 +284,23 @@ footer{
       #s5:checked ~ #slide4 {
     box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
     transform: translate3d(-20%, 0, -100px);
-      }
+}
+
+.final{
+    display: flex;
+    max-width: 100%;
+}
+
+.countdown{
+    display: inline;
+    overflow: hidden;
+    border-radius: 1px;
+    width: 15%;
+    transition: 0.7s;
+    cursor: pointer;
+    width: 600px;
+}
+
+.countdown:hover{
+    width: 100%;
+}
