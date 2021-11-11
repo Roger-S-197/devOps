@@ -10,7 +10,7 @@ body{
     padding: 0;
     margin: 0;
     width: 100wh;
-    background-color: white;
+    background-color: rgb(230, 230, 230);
 }
 
 .center{
@@ -44,6 +44,7 @@ header {
     transition: 0.7s;
     display: inline-block;
     padding: 35px 20px;
+    font-family: 'Play', sans-serif;
 }
 
 .menu a:hover{
@@ -99,12 +100,15 @@ header {
     font-size: 26px;
 }
 
-.servicos h3{
+.planos{
     text-align: center;
     text-decoration: none;
     padding: 20px;
-    color: darkgreen;
-    max-width: 80%;
+    color: black;
+    max-width: 88%;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 }
 
 .servicos p{
@@ -119,10 +123,16 @@ header {
 }
 
 .frase{
+    max-width: 75%;
+    padding-top: 20px;
     text-align: center;
     color: green;
     font-size: 22px;
+    font-family: 'Play', sans-serif;
+}
 
+.frase h3{
+    padding-bottom: 8px;
 }
 
 .ifood{
@@ -130,8 +140,12 @@ header {
     text-align: center;
     color: #fff;
     text-decoration: none;
-
 }
+
+.ifood h2{
+    font-family: 'Play', sans-serif;
+}
+
 footer{
     display: flexbox;
     padding: 30px;
@@ -145,6 +159,7 @@ footer{
 .contato h2{
     color: #fff;
     margin-left: 20px;
+    font-family: 'Play', sans-serif;
 }
 
 .contato a{
@@ -152,10 +167,11 @@ footer{
     transition: 0.7s;
     font-size: 20px;
     text-decoration: none;
+    font-family: 'Play', sans-serif;
 }
 
 .contato a:hover{
-    color: rgba(255, 0, 0, 0.493);
+    color: #070;
     font-size: 22px;
 }
 
@@ -167,6 +183,7 @@ footer{
 }
 
 .comunidade{
+    padding: 20px;
     text-align: center;
     width: 80%;
 }
@@ -178,16 +195,16 @@ footer{
 .form{
     text-align: center;
     color: #007;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 22px;
+    margin-bottom: 15px;
 }
 
 #slider {
     position: relative;
     width: 50%;
     height: 32vw;
-    margin-top: 20px;
-    margin-bottom: 120px;
+    margin-top: 8px;
+    margin-bottom: 80px;
     font-family: 'Helvetica Neue', sans-serif;
     perspective: 1400px;
     transform-style: preserve-3d;
@@ -294,7 +311,7 @@ input[type=radio]:checked {
 .countdown{
     display: inline;
     overflow: hidden;
-    border-radius: 1px;
+    border-radius: 3px;
     width: 15%;
     transition: 0.7s;
     cursor: pointer;
