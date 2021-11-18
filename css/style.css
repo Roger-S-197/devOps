@@ -112,6 +112,7 @@ header {
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
+    width: 100%;
 }
 
 .servicos p{
@@ -324,10 +325,11 @@ input[type=radio]:checked {
     width: 100%;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 768px) {
     .menu{
         text-align: center;
         margin-bottom: 20px;
+        display: grid;
     }
 }
 
@@ -335,15 +337,15 @@ input[type=radio]:checked {
     .menu a{
         width: 100%;
         display: inline-block;
-        float: center;
+        width: max-content;
+    }
+
+    .imagens{
+        display: none;
     }
 }
 
 @media screen and (max-width: 400px) {
-    
-    .logo{
-        display: none;
-    }
     footer{
         width: 100%;
         display: grid;
