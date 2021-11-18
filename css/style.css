@@ -9,7 +9,6 @@ body{
     height: 100vh;
     padding: 0;
     margin: 0;
-    width: 100wh;
     background-color: rgb(230, 230, 230);
 }
 
@@ -51,7 +50,6 @@ header {
     color: azure;
     background-color: #070;
     font-size: 16px;
-    /*rgb(24, 69, 0)*/
 }
 
 .foto {
@@ -236,10 +234,7 @@ input[type=radio]:nth-child(5) {
 input[type=radio]:checked {
     opacity: 1;
 }
-  
-  
-  
-  
+
 #slider label,
 #slider label img {
     position: absolute;
@@ -327,3 +322,43 @@ input[type=radio]:checked {
 .countdown:hover{
     width: 100%;
 }
+
+@media screen and (max-width: 790px) {
+    .menu{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu a{
+        width: 100%;
+        display: inline-block;
+        float: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    
+    .logo{
+        display: none;
+    }
+    footer{
+        width: 100%;
+        display: grid;
+    }
+
+    .contato{
+        width: 100%;
+        float: top;
+        padding-bottom: 15px;
+    }
+
+    .ifood{
+        border-top: 1px solid green;
+        width: 100%;
+        padding-top: 15px;
+        float: bottom;
+    }
+    
+    }
